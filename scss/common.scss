@@ -1,0 +1,21 @@
+@charset "utf-8"; 
+
+//변수
+$main-color : #FF2060;
+$title-color : #fff; //이미지에 따라서 유동적으로 변경
+$border-color: #d8d8d8;
+$background-color: #d2d2d2;
+$bruce-color: #48c4e8;
+
+//믹스인
+@mixin aling-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin clearFix {
+    display: table;
+    content:'';
+    clear: both;
+}

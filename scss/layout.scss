@@ -1,0 +1,175 @@
+@charset "utf-8"; 
+@import "common.scss";
+
+//배경
+body {
+    background: {
+        color: $background-color; 
+    };
+}
+.wrap {
+    background: {
+        color: #fff;
+    };
+    display: flex;
+    width: 1220px;
+    height: 80vh;
+}
+
+//왼쪽 영역
+.imgArea {
+    flex: 1;
+    position: relative;
+    background: $main-color;
+    .textArea {
+        color: $title-color;
+        h2 {
+            color: $title-color;
+            font-size: 38px;
+            font-weight: bold;
+            line-height: 1.2;
+            letter-spacing: -2px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+//오른쪽 영역
+.formArea {
+    width: 400px;
+    padding: 60px;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    box-sizing: content-box;
+    .formWrap {
+        @include aling-center;
+        .formItem {
+            margin-bottom: 24px;
+            p {
+                font-weight: 500;
+                em {
+                    color: $main-color;
+                    margin-left: 2px;
+                }
+            }
+            input[type='text'] {
+                width:400px;
+                font: {
+                    size: 16px;
+                }
+                border: 1px solid $border-color;
+                line-height: 42px;
+                height: 44px;
+                padding: 0 12px;
+                margin-top: 8px;
+                box-sizing: border-box;
+    
+                &:focus {
+                    border: 1px solid #000;
+                    outline: 0;
+                }
+            }       
+        }
+        .buttonArea {
+            margin-top: 40px;
+            position: relative;
+            input[type='submit'] {
+                width: 400px;
+                background-color: #d2d2d2;
+                border: 1px solid #d2d2d2;
+                color: #999;
+                height: 50px;
+                margin-top: 16px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .submit .conform {
+                background-color: #000;
+                border: 1px solid #000;
+                color: #fff;
+            }
+            a.privacyModal {
+                color: $main-color;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            input[type=checkbox] {
+                display: none;
+                &:checked + label:before{
+                    content: ""; 
+                    font-size: 18px; 
+                    font-weight:600;  
+                    background: {
+                        image : url("../upload/icon/check.png");
+                        color: $main-color;
+                        size: 100%;
+                    }
+                }
+                &+label {
+                    margin-left: 25px;
+                    line-height: 20px;
+                    &:before {
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                        background: {
+                            image : url("../upload/icon/check.png");
+                            color: #d5d5d5;
+                            size: 100%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+//미디어쿼리
+@media screen and (min-width: 1025px) {
+    html, body {
+        overflow: hidden;
+    }
+    .wrap {
+        @include aling-center;
+        box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+    }
+    .textArea {
+        padding: 60px;
+        p {
+            span {
+                display: block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1220px) {
+    .wrap {
+        width: 1000px;
+    }
+    .formArea {
+        padding: 60px 40px;
+    }
+}
+
+//IE10+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Enter your style code */
+    .formArea {
+        .formWrap {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+        }
+    }
+    .buttonArea {
+        margin-bottom: 60px;
+    }
+}

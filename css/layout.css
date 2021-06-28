@@ -1,0 +1,53 @@
+body { background-color: #d2d2d2; }
+
+.wrap { background-color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; width: 1220px; height: 80vh; }
+
+.imgArea { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; position: relative; background: #FF2060; }
+
+.imgArea .textArea { color: #fff; }
+
+.imgArea .textArea h2 { color: #fff; font-size: 38px; font-weight: bold; line-height: 1.2; letter-spacing: -2px; }
+
+.imgArea .textArea p { font-size: 16px; }
+
+.formArea { width: 400px; padding: 60px; overflow: hidden; overflow-y: auto; position: relative; -webkit-box-sizing: content-box; box-sizing: content-box; }
+
+.formArea .formWrap { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.formArea .formWrap .formItem { margin-bottom: 24px; }
+
+.formArea .formWrap .formItem p { font-weight: 500; }
+
+.formArea .formWrap .formItem p em { color: #FF2060; margin-left: 2px; }
+
+.formArea .formWrap .formItem input[type='text'] { width: 400px; font-size: 16px; border: 1px solid #d8d8d8; line-height: 42px; height: 44px; padding: 0 12px; margin-top: 8px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.formArea .formWrap .formItem input[type='text']:focus { border: 1px solid #000; outline: 0; }
+
+.formArea .formWrap .buttonArea { margin-top: 40px; position: relative; }
+
+.formArea .formWrap .buttonArea input[type='submit'] { width: 400px; background-color: #d2d2d2; border: 1px solid #d2d2d2; color: #999; height: 50px; margin-top: 16px; font-size: 16px; cursor: pointer; }
+
+.formArea .formWrap .buttonArea .submit .conform { background-color: #000; border: 1px solid #000; color: #fff; }
+
+.formArea .formWrap .buttonArea a.privacyModal { color: #FF2060; font-weight: bold; text-decoration: underline; }
+
+.formArea .formWrap .buttonArea input[type=checkbox] { display: none; }
+
+.formArea .formWrap .buttonArea input[type=checkbox]:checked + label:before { content: ""; font-size: 18px; font-weight: 600; background-image: url("../upload/icon/check.png"); background-color: #FF2060; background-size: 100%; }
+
+.formArea .formWrap .buttonArea input[type=checkbox] + label { margin-left: 25px; line-height: 20px; }
+
+.formArea .formWrap .buttonArea input[type=checkbox] + label:before { content: ""; width: 20px; height: 20px; position: absolute; left: 0; top: 2px; background-image: url("../upload/icon/check.png"); background-color: #d5d5d5; background-size: 100%; }
+
+@media screen and (min-width: 1025px) { html, body { overflow: hidden; }
+  .wrap { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2); }
+  .textArea { padding: 60px; }
+  .textArea p span { display: block; } }
+
+@media screen and (max-width: 1220px) { .wrap { width: 1000px; }
+  .formArea { padding: 60px 40px; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { /* Enter your style code */
+  .formArea .formWrap { position: relative; top: 0; left: 0; -webkit-transform: translate(0); transform: translate(0); }
+  .buttonArea { margin-bottom: 60px; } }

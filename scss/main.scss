@@ -1,0 +1,77 @@
+@charset "utf-8"; 
+@import "common.scss";
+
+//배경
+body {
+    background: {
+        color: $background-color; 
+    };
+}
+.wrap {
+    background: {
+        color: #fff;
+    };
+    display: flex;
+    width: 1220px;
+    height: 80vh;
+}
+
+//왼쪽 이미지
+.imgArea {
+    .textArea {
+        @include aling-center;
+        text-align: center;
+        h2 {
+            margin-bottom: 20px;
+            img {
+                display: block;
+                margin: 0 auto 5px;
+            }
+        }
+        .whale {
+            margin-top: 100px;
+            padding: 50px 0;
+        }
+    }
+}
+
+//개인정보보호 팝업
+#privacyModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    .modalWrap {
+        background: #fff;
+        width: 900px;
+        height: 500px;
+        position: relative;
+        @include aling-center;
+        h3{
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            height: 60px;
+            line-height: 60px;
+            background: $main-color;
+        }
+        a.close {
+            background: url("../upload/icon/closeWhite.png") no-repeat center;
+            display: block;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+        .popupContWrap {
+            overflow-y: auto;
+            .popupCont {
+                padding: 30px;
+            }
+        }
+    }
+}

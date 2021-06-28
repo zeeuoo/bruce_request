@@ -1,0 +1,73 @@
+.admin .textArea h3, .admin .logo h3 { font-size: 38px; font-weight: 700; }
+
+.admin .textArea h3:after, .admin .logo h3:after { content: "Admin"; font-size: 12px; vertical-align: text-top; font-weight: 500; }
+
+.admin .imgArea { background-color: #fff; }
+
+.admin .textArea h3 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.admin .formArea { background: #f5f5f5; }
+
+.admin .formArea .formWrap h3 { font-size: 28px; font-weight: 700; margin-bottom: 48px; }
+
+.admin .formArea .formWrap .formItem { margin-bottom: 15px; }
+
+.admin .formArea .formWrap .formItem p { font-size: 13px; }
+
+.admin .formArea .formWrap .formItem p em { color: #48c4e8; }
+
+.admin .formArea .formWrap .formItem input[type='text'] { margin-top: 6px; }
+
+.admin .formArea .formWrap .buttonArea { margin-top: 30px; }
+
+.admin .formArea .formWrap .buttonArea label { font-weight: 500; color: #333; letter-spacing: -0.04em; }
+
+.admin .formArea .formWrap .buttonArea input[type=checkbox]:checked + label:before { background-color: #48c4e8; }
+
+.admin .nav { background: #fff; padding: 14px 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.admin .nav .logo h3 { font-size: 28px; }
+
+.admin .nav .menu { font-size: 16px; font-weight: 700; }
+
+.admin .nav .menu a.on:after { content: ""; background: #000; height: 4px; position: absolute; bottom: -24px; left: 0; width: 100%; }
+
+.admin .nav .subMenu ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.admin .nav .subMenu ul li { padding: 0 10px; }
+
+.admin .nav .subMenu ul li a:hover { color: #666; }
+
+.admin .nav .subMenu ul li a.logout { text-decoration: underline; }
+
+.admin .container .wrap { padding: 60px; }
+
+.admin .container .wrap .dataTable table { width: 100%; text-align: center; }
+
+.admin .container .wrap .dataTable table thead { background: #f5f5f5; }
+
+.admin .container .wrap .dataTable table thead tr th { border-width: 2px; border-color: #ccc; }
+
+.admin .container .wrap .dataTable table tbody { color: #333; }
+
+.admin .container .wrap .dataTable table tbody tr.new { background: #eff7ff; }
+
+.admin .container .wrap .dataTable table tr th, .admin .container .wrap .dataTable table tr td { padding: 15px 0; border-bottom: 1px solid #e2e2e2; }
+
+.admin .container .wrap .pagination ul { margin-top: 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.admin .container .wrap .pagination ul li { text-align: center; line-height: 24px; margin: 5px; }
+
+.admin .container .wrap .pagination ul li a { display: inline-block; width: 24px; height: 24px; padding: 6px; }
+
+.admin .container .wrap .pagination ul li a:hover { color: #48c4e8; }
+
+.admin .container .wrap .pagination ul li a.on { color: #48c4e8; font-weight: 700; }
+
+.admin .container .wrap .pagination ul li a svg { fill: #000; }
+
+.admin .container .wrap .pagination ul li a svg:hover { fill: #48c4e8; }
+
+.admin .container .wrap .pagination ul li a.disable svg { fill: #d2d2d2; }
+
+@media screen and (min-width: 1025px) { .container .wrap { height: auto; position: relative; top: auto; left: auto; -webkit-transform: none; transform: none; margin: 30px auto; width: 80vw; display: block; } }

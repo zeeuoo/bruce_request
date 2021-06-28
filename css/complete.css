@@ -1,0 +1,11 @@
+.wrap .complete { background-color: #fff; text-align: center; position: relative; }
+
+.wrap .complete .textArea { margin-top: 100px; }
+
+.wrap .complete .textArea h3 { font-size: 32px; font-weight: 700; letter-spacing: -2px; margin: 10px 0 20px; }
+
+.wrap .complete .textArea p { background: #f1f1f1; color: #666; width: 45%; margin: 0 auto; padding: 10px 15px; }
+
+.wrap .complete .logo { position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.wrap .complete .logo img { padding: 40px; }

@@ -1,0 +1,23 @@
+body { background-color: #d2d2d2; }
+
+.wrap { background-color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; width: 1220px; height: 80vh; }
+
+.imgArea .textArea { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
+
+.imgArea .textArea h2 { margin-bottom: 20px; }
+
+.imgArea .textArea h2 img { display: block; margin: 0 auto 5px; }
+
+.imgArea .textArea .whale { margin-top: 100px; padding: 50px 0; }
+
+#privacyModal { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); }
+
+#privacyModal .modalWrap { background: #fff; width: 900px; height: 500px; position: relative; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+#privacyModal .modalWrap h3 { font-size: 24px; text-align: center; font-weight: bold; color: #fff; height: 60px; line-height: 60px; background: #FF2060; }
+
+#privacyModal .modalWrap a.close { background: url("../upload/icon/closeWhite.png") no-repeat center; display: block; width: 32px; height: 32px; position: absolute; top: 12px; right: 12px; }
+
+#privacyModal .modalWrap .popupContWrap { overflow-y: auto; }
+
+#privacyModal .modalWrap .popupContWrap .popupCont { padding: 30px; }
